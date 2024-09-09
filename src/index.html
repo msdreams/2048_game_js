@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <title>2048</title>
     <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
+    <!-- <script type="module" src="scripts/main.js"></script> -->
   </head>
-  <body>
-    <h1>Landing Page</h1>
+  <body class="page">
+    <div class="page__container">
+      <div class="game">
+        <div class="game__header">
+          <h1 class="game__title">2048</h1>
+          <div class="game__controls">
+            <p class="game__info">
+              Score: <span class="game__score" data-score="score">0</span>
+            </p>
+            <p class="game__info">
+              Best: <span class="game__score" data-best="best">0</span>
+            </p>
+            <button class="button start">Start</button>
+          </div>
+        </div>
+
+        <table class="game__field">
+          <tbody class="field">
+          </tbody>
+        </table>
+        <div class="message">
+          <p class="message__content message__content--lose hidden">You lose! Restart the game?</p>
+          <p class="message__content message__content--win hidden">Winner! Congrats! You did it!</p>
+          <p class="message__content message__content--start">Press "Start" to begin game. Good luck!</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
