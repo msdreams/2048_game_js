@@ -6,45 +6,55 @@
   &__header {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 24px;
-    padding: 0, 10px;
     box-sizing: border-box;
   }
 
   &__title {
-    color: $ceil-2048-background-color;
-    width: 95px;
+    color: #446583;
+    width: 75px;
     height: 60px;
-    font-size: 40px;
+    font-size: 34px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 10px 0 0;
+    transform: translate(-4px);
   }
 
   &__field {
     background: $field-background-color;
+    border: 1px solid #192435;
     border-spacing: 10px;
     border-radius: 5px;
-    color: $field-text-color;
+    color: $main-text-color;
   }
 
   &__info {
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: $info-background-color;
+    background: rgba($info-background-color, 0.6);
+    border: 1px solid #192435;
     width: 75px;
     height: 60px;
     border-radius: 5px;
-    color: $info-text-color;
+    color: #446583;
     box-sizing: border-box;
-    font-size: 16px;
-    margin: 0 8px 0 0;
+    font-size: 18px;
+    margin: 0 10px 0 0;
+    transition: 0.25s ease;
+
+
+    &:hover {
+      color: $secondary-text-color;
+      border: 1px solid $secondary-text-color;
+    }
   }
   
   &__controls {

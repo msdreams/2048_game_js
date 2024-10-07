@@ -4,27 +4,27 @@
   cursor: pointer;
   color: $secondary-text-color;
   font-family: sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   width: 75px;
-  height: 75px;
 
   transition: 0.25s ease;
 
   &.start {
-    background: #8cb9bd;
+    background: rgba($ceil-128-background-color, 0.5);;
+    ;
     font-size: 20px;
   
     &:hover {
-      background: #4ab4bd;
+      background: rgba($ceil-128-background-color, 0.8);;
     }
   }
 
   &.restart {
-    background: #ffaf9d;
+    background: rgba($ceil-64-background-color, 0.5);;
   
     &:hover {
-      background: #f65e3b;
+      background: rgba($ceil-128-background-color, 0.8);;
     }
   }
 }

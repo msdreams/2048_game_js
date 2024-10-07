@@ -6,15 +6,16 @@
   gap: $cell-gap;
 
   &__cell {
-    background: #e5e1da;
+    background: $field-cell-color;
     border-radius: 5px;
-    color: $main-text-color;
+    font-weight: 400;
+    color: $secondary-text-color;
     text-align: center;
     line-height: $cell-height;
     user-select: none;
 
     &--2 {
-      background: $ceil-2-background-color;
+      background: $field-cell-color;
     }
   
     &--4 {
@@ -23,47 +24,38 @@
   
     &--8 {
       background: $ceil-8-background-color;
-      color: #f9f6f2;
     }
   
     &--16 {
       background: $ceil-16-background-color;
-      color: #f9f6f2;
     }
   
     &--32 {
       background: $ceil-32-background-color;
-      color: #f9f6f2;
     }
   
     &--64 {
       background: $ceil-64-background-color;
-      color: #f9f6f2;
     }
   
     &--128 {
       background: $ceil-128-background-color;
-      color: #f9f6f2;
     }
   
     &--256 {
       background: $ceil-256-background-color;
-      color: #f9f6f2;
     }
   
     &--512 {
       background: $ceil-512-background-color;
-      color: #f9f6f2;
     }
   
     &--1024 {
       background: $ceil-1024-background-color;
-      color: #f9f6f2;
     }
   
     &--2048 {
       background: $ceil-2048-background-color;
-      color: #f9f6f2;
     }
   }
 }

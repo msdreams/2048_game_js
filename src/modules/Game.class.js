@@ -291,19 +291,16 @@ class Game {
   }
 
   setBestScore(score, user) {
-    if (user === null || user < score) {
-      localStorage.setItem('user', score);
+    user = parseInt(sessionStorage.getItem('user'), 10);
+
+    if (isNaN(user) || user < score) {
+      sessionStorage.setItem('user', score.toString());
     }
   }
 
   getBestScore() {
-    const user = localStorage.getItem('user');
-
-    if (user === null) {
-      return 0;
-    }
-
-    return user;
+    const user = sessionStorage.getItem('user');
+    return user ? parseInt(user, 10) : 0;
   }
 }
 
