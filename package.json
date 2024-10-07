@@ -1,4 +1,5 @@
 {
+  "homepage": "https://username.github.io/2048_game_js",
   "name": "gulp-boilerplate",
   "version": "1.0.0",
   "description": "Frontend boilerplate based on gulp",
